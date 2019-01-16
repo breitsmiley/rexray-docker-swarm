@@ -29,7 +29,7 @@ secrets:
 volumes:
   dobs:
     driver: rexray/dobs
-    driver_opts: dobs
+    driver_opts:
       size: 1
 
 services:
