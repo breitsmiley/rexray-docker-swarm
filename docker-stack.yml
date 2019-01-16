@@ -79,7 +79,7 @@ services:
         mode: 0444
 
   rexray-pma:
-    image: phpmyadmin:4.8
+    image: phpmyadmin/phpmyadmin:4.8
     environment:
       - MYSQL_USER=pma
       - MYSQL_PASSWORD=pma
