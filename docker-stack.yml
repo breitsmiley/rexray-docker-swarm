@@ -27,7 +27,7 @@ secrets:
 #================================================
 
 volumes:
-  mynewvolume:
+  dobs:
     driver: rexray/dobs
     driver_opts: dobs
       size: 1
