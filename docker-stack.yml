@@ -78,3 +78,19 @@ services:
         target: rexrayMysqlDb-MYSQL_ROOT_PASSWORD
         mode: 0444
 
+  rexray-pma:
+    image: phpmyadmin:4.8
+    environment:
+      - MYSQL_USER=pma
+      - MYSQL_PASSWORD=pma
+      - MYSQL_ROOT_PASSWORD=root
+      - PMA_HOST=rexray-mysql-db
+    deploy:
+      replicas: 1
+    logging:
+      options:
+        max-size: "10m"
+        max-file: "5"
+    ports:
+      - "8000:80"
+

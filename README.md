@@ -17,9 +17,12 @@ docker swarm init --advertise-addr DROPLET_IP
 
 #### Install REX-Ray plugin
 - Get **DO_API_TOKEN**: https://www.digitalocean.com/docs/api/create-personal-access-token/
-
+- https://rexray.readthedocs.io/en/stable/user-guide/schedulers/docker/plug-ins/digitalocean/
 ```bash
-docker plugin install rexray/dobs DOBS_REGION=sfo2 DOBS_TOKEN=DO_API_TOKEN
+docker plugin install rexray/dobs \
+ DOBS_REGION=sfo2 \ 
+ DOBS_TOKEN=DO_API_TOKEN \
+ DOBS_CONVERTUNDERSCORES=true
 ```
 
 #### Clone project repository
