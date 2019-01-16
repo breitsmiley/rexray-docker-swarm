@@ -1,5 +1,7 @@
 # 1 Preparing Digital Ocean Droplets
 
+**Warning! Woker and manager must be placed in the same region**
+
 ## 1.1 Manager
 1. Create Droplet
 2. ssh root@**DROPLET_IP**
